@@ -1,94 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Júlio Souza | DevOps</title>
-    <style>
-        :root {
-            --neon-cyan: #00f0ff;
-            --neon-pink: #ff00f0;
-            --bg-dark: #0a0a0a;
-            --text-light: #e0e0e0;
-        }
-        body {
-            background: var(--bg-dark) url('https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2000&auto=format&fit=crop') no-repeat center center fixed;
-            background-size: cover;
-            color: var(--neon-cyan);
-            font-family: 'Share Tech Mono', monospace;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
-            /* Efeito de sobreposição escura para melhor legibilidade */
-            position: relative;
-        }
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(10, 10, 10, 0.85);
-            z-index: -1;
-        }
-        h1 {
-            border-bottom: 1px solid var(--neon-cyan);
-            display: inline-block;
-            padding-bottom: 5px;
-            text-shadow: 0 0 8px var(--neon-cyan);
-        }
-        a {
-            color: var(--neon-pink);
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        a:hover {
-            text-shadow: 0 0 5px var(--neon-pink);
-        }
-        .skills {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .skill-badge {
-            background: rgba(0, 240, 255, 0.1);
-            border: 1px solid var(--neon-cyan);
-            border-radius: 4px;
-            padding: 5px 10px;
-            backdrop-filter: blur(2px);
-        }
-        .cursor {
-            animation: blink 1s infinite;
-        }
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
-    </style>
-    <!-- Fonte Cyberpunk -->
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Júlio Souza | DevOps</title>
+
+  <!-- Fonte monoespaçada estilo terminal -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --neon-yellow: #ffee55;
+      --bg-dark: #0a0a0a;
+      --text-light: #f0f0c0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-dark) url('https://i.imgur.com/Ipd7NRO.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--neon-yellow);
+      font-family: 'Share Tech Mono', monospace;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(10, 10, 10, 0.85); /* escurece para legibilidade */
+      z-index: -1;
+    }
+
+    h1 {
+      border-bottom: 1px solid var(--neon-yellow);
+      display: inline-block;
+      padding-bottom: 5px;
+      text-shadow: 0 0 10px var(--neon-yellow);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    a {
+      color: var(--neon-yellow);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      text-shadow: 0 0 8px var(--neon-yellow);
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .skill-badge {
+      background: rgba(255, 238, 85, 0.1);
+      border: 1px solid var(--neon-yellow);
+      border-radius: 4px;
+      padding: 5px 10px;
+      backdrop-filter: blur(2px);
+      text-shadow: 0 0 5px var(--neon-yellow);
+    }
+
+    .cursor {
+      animation: blink 1s infinite;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 2rem;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>>_ Júlio Caynã Aguiar de Souza</h1>
-    <p>Desenvolvedor BackEnd | Estudando CyberSecurity </p>
+  <h1>>_ Júlio Caynã Aguiar de Souza</h1>
+  <p>Desenvolvedor Back-End | Estudando Cybersecurity</p>
 
+  <div class="skills">
+    <span class="skill-badge">Python</span>
+    <span class="skill-badge">PHP</span>
+    <span class="skill-badge">Hacker Wannabe</span>
+  </div>
 
-    <div class="skills">
-        <span class="skill-badge">Python</span>
-        <span class="skill-badge">PHP</span>
-        <span class="skill-badge">Hacker wannabe</span>
-    </div>
+  <p><a href="mailto:juliocaynaaguiar@gmail.com">📫 juliocaynaaguiar@gmail.com</a></p>
+  <p><a href="https://www.linkedin.com/in/j%C3%BAlio-cayn%C3%A3-aguiar-de-souza-b71639280/" target="_blank">🔗 LinkedIn</a></p>
+  <p><a href="https://github.com/preceptorugin" target="_blank">💻 GitHub</a></p>
 
-    <p>
-        <a href="mailto:juliocaynaaguiar@gmail.com">📫 juliocaynaaguiar@gmail.com</a></p>
-        <a href="https://www.linkedin.com/in/j%C3%BAlio-cayn%C3%A3-aguiar-de-souza-b71639280/">🔗 LinkedIn</a></p>
-        <a href="https://github.com/preceptorugin" target="_blank">GitHub</a>
-    </p>
-
-    <p class="cursor">▌</p>
+  <p class="cursor">▌</p>
 </body>
 </html>
